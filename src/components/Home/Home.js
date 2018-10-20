@@ -1,13 +1,14 @@
 import React from "react";
+import styles from './Home.module.scss'
 
 const Home = () => {
     return (
-        <main className="">
+        <div className="">
             <aside>photo</aside>
             <article>
                 <hgroup>
-                    <h4>Hello,</h4>
-                    <h4>Let me tell about me</h4>
+                    <h4 className={styles.greetingsTitle}>Hello,</h4>
+                    <h4 className={styles.greetingsTitle}>Let me tell about me</h4>
                     <div>
                         <a href="#">My Resume</a>
                         <a href="#">My work</a>
@@ -24,7 +25,7 @@ const Home = () => {
                     </p>
                 </hgroup>
             </article>
-        </main>
+        </div>
     );
 };
 

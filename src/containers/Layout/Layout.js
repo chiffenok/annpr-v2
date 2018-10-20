@@ -5,13 +5,13 @@ import styles from './Layout.module.scss';
 const Layout = () => {
     return (
         <div className="App">
-            <header className="App-header">
-                <div className="titles">
+            <header className={styles.header}>
+                <div className={styles.titlesName}>
                     <h1>Anna Presnyakova</h1>
                     <h2>Web-Developer</h2>
                 </div>
-                <nav>
-                    <ul className={styles.ul}>
+                <nav className={styles.navigation}>
+                    <ul className={styles.navigationList}>
                         <li>Home</li>
                         <li>Resume</li>
                         <li>Projects</li>
@@ -19,8 +19,10 @@ const Layout = () => {
                     </ul>
                 </nav>
             </header>
-            <Home/>
-            <footer>
+            <main className={styles.main}>
+                <Home/>
+            </main>
+            <footer className={styles.footer}>
                 <div>footer</div>
             </footer>
         </div>
