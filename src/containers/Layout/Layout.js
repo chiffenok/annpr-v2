@@ -1,6 +1,6 @@
 import React from "react";
 import Home from '../../components/Home/Home';
-import '../Layout/Layout.css';
+import styles from './Layout.module.scss';
 
 const Layout = () => {
     return (
@@ -11,7 +11,7 @@ const Layout = () => {
                     <h2>Web-Developer</h2>
                 </div>
                 <nav>
-                    <ul className='ul'>
+                    <ul className={styles.ul}>
                         <li>Home</li>
                         <li>Resume</li>
                         <li>Projects</li>
