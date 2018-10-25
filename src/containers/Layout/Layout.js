@@ -1,17 +1,17 @@
 import React from "react";
 import Home from '../../components/Home/Home';
-import styles from './Layout.module.scss';
+import ss from '../../common/itcss.scss';
 
 const Layout = () => {
     return (
         <div className="App">
-            <header className={styles.header}>
-                <div className={styles.titlesName}>
+            <header className="header">
+                <div className="titlesName">
                     <h1>Anna Presnyakova</h1>
                     <h2>Web-Developer</h2>
                 </div>
-                <nav className={styles.navigation}>
-                    <ul className={styles.navigationList}>
+                <nav className="navigation">
+                    <ul className="navigationList">
                         <li>Home</li>
                         <li>Resume</li>
                         <li>Projects</li>
@@ -19,10 +19,10 @@ const Layout = () => {
                     </ul>
                 </nav>
             </header>
-            <main className={styles.main}>
+            <main className="main">
                 <Home/>
             </main>
-            <footer className={styles.footer}>
+            <footer className="footer">
                 <div>footer</div>
             </footer>
         </div>

@@ -1,3 +1,6 @@
+$main-color: red;
+
+
 .header, .main, .footer {
     width: 980px;
     margin: auto;
@@ -6,10 +9,26 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 2fr;
+    margin-top: 1rem;
+}
+.titlesName {
+    h1 {
+        margin: 0 0 1rem;
+    }
+    h2 {
+        margin: 0 0 1rem;
+    }
 }
 .navigationList {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    li {
+        margin-right: 1rem;
+    }
+}
+
+.footer {
+    background-color: $main-color;
 }
