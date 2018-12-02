@@ -1,7 +1,6 @@
-
 .titlesName {
     h1 {
-        font-family: 'Noticia Text', serif;
+        font-family: "Noticia Text", serif;
         font-size: 2.7rem;
         margin: 0 0 1rem;
     }
@@ -9,6 +8,9 @@
         font-size: 1.125rem;
         margin: 0 0 1rem;
     }
+}
+.navigation {
+    position: relative;
 }
 .navigationList {
     display: flex;
@@ -18,8 +20,98 @@
     margin-top: 3rem;
 
     li {
-        font-size: .875rem;
+        font-size: 0.875rem;
         margin-right: 2rem;
         text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        color: #8B8B8B; 
+        &:hover {
+            color: $secondary-color
+        }
+    }
+}
+.navButton {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background: #4d4d4d;
+    padding: 1rem 0.8rem 0.6rem;
+    border-radius: 3px;
+    opacity: 0.95;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    display: none;
+
+    .navButtonLine {
+        width: 24px;
+        height: 3px;
+        margin-bottom: 4px;
+        background: #fff;
+        transition: all 400ms;
+    }
+}
+@media (max-width: 800px) {
+    .navButton {
+        display: block;
+
+        &.opened {
+            .navButtonLine:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 5px);
+            }
+            .navButtonLine:nth-child(2) {
+                display: none;
+            }
+            .navButtonLine:nth-child(3) {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .navigationList {
+        /*display: none;*/
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 93vw;
+
+        li {
+            font-family: 'Open Sans', sans-serif;
+            opacity: 0.95;
+            height: 48px;
+            line-height: 48px;
+            background-color: #4d4d4d;
+            border-bottom: 1px solid #eae5e5;
+            cursor: pointer;
+            position: relative;
+            margin-right: 0;
+            transition: all 700ms;
+            transform: translateX(120%);
+        }
+
+        a {
+            color: #eae5e5;
+            padding: 0 17px;
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            transition: all 700ms;
+            &:hover {
+                background-color: $secondary-color;
+                color: #fff;
+            }
+        }
+
+        &.opened {
+            li {
+                transform: translateX(0%);
+            }
+        }
     }
 }

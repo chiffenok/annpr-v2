@@ -11,7 +11,25 @@ const Layout = () => {
                 <Home/>
             </main>
             <footer className="footer">
-                <div>footer</div>
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Call</h4>
+                            <p>T: +49 177 18 99 365</p>
+                        </li>
+                        <li>
+                            <h4>Contact</h4>
+                            <p><a href="mailto:apresnyakova88@gmail.com">apresnyakova88@gmail.com</a></p>
+                        </li>
+                        <li>
+                            <h4>Follow Me</h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <p>2019 Anna Presnyakova</p>
+                        </li>
+                    </ul>
+                </div>
             </footer>
         </div>
     );

@@ -1,5 +1,4 @@
-$main-color: red;
-
+@import './variables.module.scss';
 @import url('https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i|Open+Sans');
 @import '../containers/Layout/Layout.module.scss';
 @import '../components/Home/Home.module.scss';

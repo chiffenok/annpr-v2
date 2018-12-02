@@ -1,3 +1,5 @@
+@import '../../common/variables.module.scss';
+
 .HomePage {
     display: flex;
 }
@@ -30,10 +32,11 @@
 .circleMenu {
     display: flex;
     justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
     margin: 2rem 0;
 
     a { 
-        background: #E73556;
+        background: $main-color;
         color: #fff;
         display: block;
         border-radius: 50%;
@@ -46,11 +49,11 @@
         text-transform: uppercase;
 
         &:nth-child(2) {
-            background: #900;
+            background: $secondary-color;
         }
 
         &:nth-child(3) {
-            background: #090;
+            background: $third-color;
         }
     }
 }
