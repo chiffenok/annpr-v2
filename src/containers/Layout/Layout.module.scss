@@ -39,8 +39,18 @@ html {
         color: #fff;
         box-sizing: border-box;
         width: 25%;
-        margin-left: 3rem;
-        background: url(./call.svg);
+    }
+    .icon{
+        box-sizing: border-box;
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: 1rem;
+        margin-right: 1rem;
+        float: left;
+        color: $main-color;
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;
     }
     h4 {
         font-weight: bold;
