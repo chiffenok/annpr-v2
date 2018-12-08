@@ -55,7 +55,7 @@
         transition: all 400ms;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 640px) {
     .navButton {
         display: block;
 
@@ -78,7 +78,23 @@
         position: absolute;
         right: 5px;
         top: 5px;
-        width: 93vw;
+        width: 50vw;
+        visibility: hidden;
+        
+
+        &.opened {
+            visibility: visible;
+            li {
+                transform: none;
+                display: block;
+            }
+        }
+
+        @for $x from 1 through 4 {
+            li:nth-child(#{$x}) {
+                transition-delay: $x * 0.1s;
+            }
+        }
 
         li {
             font-family: 'Open Sans', sans-serif;
@@ -91,8 +107,9 @@
             cursor: pointer;
             position: relative;
             margin-right: 0;
-            transition: all 700ms;
-            transform: translateX(120%);
+            transition: all 500ms ease-out;
+            transform-origin: top right;
+            transform: scale(0,1);
         }
 
         a {
@@ -109,11 +126,6 @@
                 color: #fff;
             }
         }
-
-        &.opened {
-            li {
-                transform: translateX(0%);
-            }
-        }
     }
 }
+

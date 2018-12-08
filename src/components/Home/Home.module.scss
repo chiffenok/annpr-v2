@@ -47,11 +47,10 @@
         color: #fff;
         display: block;
         border-radius: 50%;
-        width: 130px;
-        height: 130px;    
-        vertical-align: middle;
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
         text-align: center;
-        line-height: 130px;
         text-decoration: none;
         text-transform: uppercase;
         @include easeout();
@@ -83,7 +82,7 @@
     margin-bottom: 2rem;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
     .HomePage {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -91,5 +90,26 @@
             "circles"
             "photo"
             "intro";
+    }
+    .circleMenu a {
+        width: 27vw;
+        height: 27vw;
+        line-height: 27vw;
+    }
+    .greetingsTitle {
+        display: inline-block;
+        font-size: 3rem;
+        &:nth-child(2) {
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .circleMenu a {
+        width: 10rem;
+        height: 10rem;
+        line-height: 10rem;
     }
 }

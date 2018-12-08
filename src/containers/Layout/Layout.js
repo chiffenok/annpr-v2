@@ -15,22 +15,22 @@ const Layout = () => {
                 <div>
                     <ul>
                         <li>
-                            <span className="icon"><FontAwesomeIcon icon="phone" size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon icon="phone" size="lg"/></span>
                             <h4>Call</h4>
                             <p>T: +49 177 18 99 365</p>
                         </li>
                         <li>
-                            <span className="icon"><FontAwesomeIcon icon="envelope" size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon icon="envelope" size="lg"/></span>
                             <h4>Contact</h4>
                             <p><a href="mailto:apresnyakova88@gmail.com">apresnyakova88@gmail.com</a></p>
                         </li>
                         <li>
-                            <span className="icon"><FontAwesomeIcon icon="share-alt" size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon icon="share-alt" size="lg"/></span>
                             <h4>Follow Me</h4>
                             <p></p>
                         </li>
                         <li>
-                            <span className="icon"><FontAwesomeIcon icon="copyright" size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon icon="copyright" size="lg"/></span>
                             <p>2019 Anna Presnyakova</p>
                         </li>
                     </ul>

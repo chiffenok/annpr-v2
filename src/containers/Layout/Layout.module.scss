@@ -20,6 +20,7 @@ html {
 
 .footer {
     width: 100%;
+    box-sizing: border-box;
     background-color: $main-color;
 
     div {
@@ -27,30 +28,34 @@ html {
         margin: 0 auto;
     }
     ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "icon icon icon icon";
+        grid-gap: 1rem;
         list-style: none;
-        display: flex;
         margin: 0;
         padding: 3rem 0;
     }
     li {
+        grid: icon;
         font-family: 'Open Sans', sans-serif;
         font-size: 13px;
         line-height: 1.2rem;
         color: #fff;
         box-sizing: border-box;
-        width: 25%;
     }
     .icon{
         box-sizing: border-box;
-        width: 3.75rem;
-        height: 3.75rem;
-        padding: 1rem;
-        margin-right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: .6rem;
+        margin-right: .8rem;
         float: left;
         color: $main-color;
         text-align: center;
         background: #fff;
         border-radius: 50%;
+        line-height: 1.4rem;
     }
     h4 {
         font-weight: bold;
@@ -66,6 +71,29 @@ html {
 
 @media (max-width: 979px) {
     .header, .main, .footer div {
+        box-sizing: border-box;
         width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        grid-template-columns: 4fr 1fr;
+    }
+    .footer ul {
+        padding: 1.5rem 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "icon icon"
+                            "icon icon";
+    }
+}
+
+@media (max-width: 540px) {
+    .footer ul {
+        display: block;
+    }
+    .footer li {
+        height: 3.5rem;
     }
 }
