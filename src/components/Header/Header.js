@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {NavLink} from "react-router-dom";
 
 class Header extends Component {
     constructor (props) {
@@ -28,8 +29,8 @@ class Header extends Component {
                         <div className="navButtonLine"></div>
                     </div>
                     <ul className={this.state.stateNav ? "navigationList opened": "navigationList"}>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Resume</a></li>
+                        <li><NavLink to="/" exact>Home</NavLink></li>
+                        <li><NavLink to="/skills" exact>Resume</NavLink></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>

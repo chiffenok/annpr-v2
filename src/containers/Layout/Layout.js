@@ -1,15 +1,20 @@
 import React from "react";
 import Home from '../../components/Home/Home';
+import Skills from '../../components/Skills/Skills';
 import ss from '../../common/itcss.scss';
 import Header from '../../components/Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Route, Switch} from "react-router-dom";
 
 const Layout = () => {
     return (
         <div className="App">
             <Header/>
             <main className="main">
-                <Home/>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/skills" component={Skills} />
+                </Switch>
             </main>
             <footer className="footer">
                 <div>
