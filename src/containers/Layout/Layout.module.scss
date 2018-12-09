@@ -5,6 +5,19 @@ html {
     background-color: #eae5e5;
 }
 
+p {
+    font-size: .8125rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 .header, .main, {
     width: 980px;
     margin: auto;
@@ -53,7 +66,7 @@ html {
         float: left;
         color: $main-color;
         text-align: center;
-        background: #fff;
+        background: $secondary-color;
         border-radius: 50%;
         line-height: 1.4rem;
     }

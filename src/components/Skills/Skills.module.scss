@@ -1,0 +1,87 @@
+@import '../../common/variables.module.scss';
+@mixin easeout {
+    transition: all 400ms ease-out;
+}
+
+.SkillsPage {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "titles titles"
+        "content skills";
+}
+
+.greetingsTitle {
+    grid-area: titles;
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+
+.contentCv {
+    grid-area: content;
+    .titleBuble {
+        width: 7.5rem;
+        height: 7.5rem;
+        font-size: 1rem;
+        color: #fff;
+        vertical-align: top;
+        background: $main-color;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 2.5rem 0 0 1rem;
+        margin: 2rem 0;
+    }
+
+    .contentCv_subul, .introParagraph {
+        display: inline-block;
+        width: calc(100% - 10rem);
+        margin: 3.5rem 0 1.5rem 2rem;
+    }
+
+    .contentCv_item {
+        border-top: 1px solid #8b8b8b;
+    }
+    .contentCv_subitem {
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0 0 .15rem;
+        }
+        .date {
+
+        }
+        p {
+            margin: .8rem 0 2rem;
+        }
+    }
+}
+.asideCv {
+    grid-area: skills;
+}
+.asideCv_item {
+    
+}
+
+.introParagraph {
+    font-size: .8125rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+    .SkillsPage {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titles"
+            "content"
+            "skills";
+    }
+}
+
+@media (min-width: 980px) {
+    
+}
