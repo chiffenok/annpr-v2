@@ -1,6 +1,8 @@
 import React from "react";
 import Home from '../../components/Home/Home';
 import Skills from '../../components/Skills/Skills';
+import Projects from '../../components/Projects/Projects';
+import Contacts from '../../components/Contacts/Contacts';
 import ss from '../../common/itcss.scss';
 import Header from '../../components/Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,6 +16,8 @@ const Layout = () => {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/skills" component={Skills} />
+                    <Route path="/projects" component={Projects} />
+                    <Route path="/contacts" component={Contacts} />
                 </Switch>
             </main>
             <footer className="footer">

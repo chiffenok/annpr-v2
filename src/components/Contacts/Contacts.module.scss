@@ -1,0 +1,22 @@
+@import '../../common/variables.module.scss';
+@mixin easeout {
+    transition: all 400ms ease-out;
+}
+
+.ProjectsPage {
+    display: grid;
+}
+.greetingsTitle {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+
+
+@media (max-width: 640px) {
+    
+}
+
+@media (min-width: 980px) {
+    
+}

@@ -18,6 +18,13 @@ ul {
     list-style-type: none;
 }
 
+input, textarea {
+    background: $main-color;
+    border: none;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
 .header, .main, {
     width: 980px;
     margin: auto;

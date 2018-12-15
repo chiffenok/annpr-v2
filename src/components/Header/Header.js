@@ -31,8 +31,8 @@ class Header extends Component {
                     <ul className={this.state.stateNav ? "navigationList opened": "navigationList"}>
                         <li><NavLink to="/" exact>Home</NavLink></li>
                         <li><NavLink to="/skills" exact>Resume</NavLink></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><NavLink to="/projects" exact>Projects</NavLink></li>
+                        <li><NavLink to="/contacts" exact>Contacts</NavLink></li>
                     </ul>
                 </nav>
             </header>
