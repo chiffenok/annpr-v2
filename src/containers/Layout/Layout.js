@@ -5,7 +5,7 @@ import Projects from '../../components/Projects/Projects';
 import Contacts from '../../components/Contacts/Contacts';
 import ss from '../../common/itcss.scss';
 import Header from '../../components/Header/Header';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Route, Switch} from "react-router-dom";
 
 const Layout = () => {

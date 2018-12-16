@@ -29,7 +29,7 @@
         text-decoration: none;
         color: #8B8B8B;
         transition: all 400ms;
-        &:hover {
+        &:hover, &.active {
             color: $secondary-color
         }
     }

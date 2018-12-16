@@ -21,13 +21,13 @@
         grid-template-areas:
             "media  content";
         border-top: 1px solid #8b8b8b;
-        padding: 2rem 0;
+        padding: 2rem 0 3rem;
     }
     .media {
         grid-area: media;
-        background-color: blue;
+        background-color: peru;
         width: 100%;
-        height: 200px;
+        min-height: 255px;
     }
     .projectsList_content {
         grid-area: content;
@@ -35,19 +35,19 @@
             border-top: 1px solid #8b8b8b;
             font-size: 1rem;
             font-weight: 400;
-            padding: 1rem 0 .75rem;
+            padding: 1.5rem 0 1rem;
             margin: 0;
         }
         p {
-
+            margin-bottom: 0;
         }
     }
     .titleBuble {
-        width: 5rem;
-        height: 5rem;
-        padding: 1rem 0 0 1rem;
+        width: 6rem;
+        height: 6rem;
+        padding: 2.2rem 0 0 .8rem;
         background: $secondary-color;
-        margin: 0 0 1rem;
+        margin: 0 0 1.5rem;
     }
 }
 

@@ -18,20 +18,22 @@
     font-weight: 700;
     margin: 0 0 1rem;
 }
+.titleBuble {
+    width: 7.5rem;
+    height: 7.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: $main-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 2.5rem 0 0 1rem;
+}
 
 .contentCv {
     grid-area: content;
     .titleBuble {
-        width: 7.5rem;
-        height: 7.5rem;
-        font-size: 1rem;
-        color: #fff;
         vertical-align: top;
-        background: $main-color;
-        border-radius: 50%;
         display: inline-block;
-        box-sizing: border-box;
-        padding: 2.5rem 0 0 1rem;
         margin: 2rem 0;
     }
 

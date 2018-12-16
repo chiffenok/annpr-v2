@@ -3,14 +3,53 @@
     transition: all 400ms ease-out;
 }
 
-.ProjectsPage {
+.ContactsPage {
     display: grid;
+    grid-gap: 2rem;    
+    grid-template-rows: 150px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title  form"
+        "contacts  form";
 }
 .greetingsTitle {
+    grid-area: title;
     font-size: 5rem;
     font-weight: 700;
     margin: 0 0 1rem;
 }
+
+.contacts {
+    grid-area: contacts;
+
+    p {
+        margin: 0 0 0.5rem;
+    }
+}
+.social-links {
+    margin-top: 1rem;
+    li {
+        display: inline-block;
+        margin-right: .5rem;
+    }
+    a {
+        color: #000;
+    }
+}
+
+.form {
+    grid-area: form;
+    margin: 0 0 2rem;
+
+    input, textarea {
+        width: 100%;
+    }
+    button {
+        float: right;
+    }
+}
+
+
 
 
 @media (max-width: 640px) {

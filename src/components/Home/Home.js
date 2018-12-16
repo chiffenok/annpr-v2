@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss";
+import {Link} from "react-router-dom";
 import woman from "./../../common/img/woman.jpeg";
 
 const Home = () => {
@@ -12,11 +13,11 @@ const Home = () => {
                 <h4 className={styles.greetingsTitle}>Hello,</h4>
                 <h4 className={styles.greetingsTitle}>a bit about me:</h4>
             </hgroup>
-            <div className="circleMenu">
-                <a href="#">My Resume</a>
-                <a href="#">My work</a>
-                <a href="#">My skils</a>
-            </div>
+            <ul className="circleMenu">
+                <li><Link to="/skills">My Resume</Link></li>
+                <li><Link to="/projects">My Work</Link></li>
+                <li><Link to="/skills">My Skills</Link></li>
+            </ul>
             <p className="introParagraph">
                 I'm a paragraph. Click here to add your own text and edit me.
                 It’s easy. Just click “Edit Text” or double click me and you can

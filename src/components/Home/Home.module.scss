@@ -42,16 +42,14 @@
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
 
-    a { 
+    li { 
         background: $main-color;
-        color: #fff;
         display: block;
         border-radius: 50%;
         width: 15vw;
         height: 15vw;
         line-height: 15vw;
         text-align: center;
-        text-decoration: none;
         text-transform: uppercase;
         @include easeout();
         &:hover {
@@ -71,6 +69,10 @@
                 background-color: darken($third-color, 20%);
             }
         }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 
@@ -87,7 +89,7 @@
             "photo"
             "intro";
     }
-    .circleMenu a {
+    .circleMenu li {
         width: 27vw;
         height: 27vw;
         line-height: 27vw;
@@ -103,7 +105,7 @@
 }
 
 @media (min-width: 980px) {
-    .circleMenu a {
+    .circleMenu li {
         width: 10rem;
         height: 10rem;
         line-height: 10rem;

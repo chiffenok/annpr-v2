@@ -18,11 +18,32 @@ ul {
     list-style-type: none;
 }
 
-input, textarea {
+input, textarea, button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: .8125rem;
+    line-height: 1.4rem;
     background: $main-color;
     border: none;
+    box-sizing: border-box;
     color: #fff;
-    margin-bottom: 0.5rem;
+    padding: .35rem;
+    margin-bottom: .35rem;
+}
+input, textarea {
+    &::placeholder {
+        color: #fff;
+    }
+    &:focus {
+        outline: 1px solid $secondary-color;
+        box-shadow: 0 0 2px $secondary-color;
+    }
+}
+button {
+    cursor: pointer;
+    font-weight: 400;
+    padding: .35rem 1.8rem;
+    background: $secondary-color;
 }
 
 .header, .main, {
