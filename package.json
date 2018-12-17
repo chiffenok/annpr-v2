@@ -2,6 +2,7 @@
   "name": "annpr-v2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chiffenok.github.io/annpr-v2",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
@@ -30,6 +31,7 @@
     "eslint-plugin-react": "7.11.1",
     "file-loader": "2.0.0",
     "fs-extra": "7.0.0",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "i": "^0.3.6",
     "identity-obj-proxy": "3.0.0",
@@ -66,7 +68,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
