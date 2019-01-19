@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="HomePage">
             <aside className="photo">
-                <img src={woman} />
+                <img alt="Anna Presnyakova" src={woman} />
             </aside>
             <hgroup>
                 <h4 className={styles.greetingsTitle}>Hello,</h4>

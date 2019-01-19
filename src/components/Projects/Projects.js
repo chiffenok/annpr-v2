@@ -11,7 +11,7 @@ const Projects = () => {
                 <li className="projectsList_item">
                     <div className="media"></div>
                     <div className="projectsList_content">
-                        <div className="titleBuble">Project 01</div>
+                        <div className="titleBubble">Project 01</div>
                         <h3>Project 01 title</h3>
                         <p>Test I'm a paragraph. Click here to add your own text and edit me.
                         It’s easy. Just click “Edit Text” or double click me and you can
@@ -24,7 +24,7 @@ const Projects = () => {
                 <li className="projectsList_item">
                     <div className="media"></div>
                     <div className="projectsList_content">
-                        <div className="titleBuble">Project 01</div>
+                        <div className="titleBubble">Project 01</div>
                         <h3>Project 01 title</h3>
                         <p>Test I'm a paragraph. Click here to add your own text and edit me.
                         It’s easy. Just click “Edit Text” or double click me and you can
@@ -37,7 +37,7 @@ const Projects = () => {
                 <li className="projectsList_item">
                     <div className="media"></div>
                     <div className="projectsList_content">
-                        <div className="titleBuble">Project 01</div>
+                        <div className="titleBubble">Project 01</div>
                         <h3>Project 01 title</h3>
                         <p>Test I'm a paragraph. Click here to add your own text and edit me.
                         It’s easy. Just click “Edit Text” or double click me and you can

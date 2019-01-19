@@ -18,7 +18,7 @@
     font-weight: 700;
     margin: 0 0 1rem;
 }
-.titleBuble {
+.titleBubble {
     width: 7.5rem;
     height: 7.5rem;
     font-size: 1rem;
@@ -31,7 +31,7 @@
 
 .contentCv {
     grid-area: content;
-    .titleBuble {
+    .titleBubble {
         vertical-align: top;
         display: inline-block;
         margin: 2rem 0;
@@ -64,7 +64,29 @@
     grid-area: skills;
 }
 .asideCv_item {
-    
+
+    h4 {
+        border-bottom: 1px solid #8b8b8b;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .icon {
+        background: $secondary-color;
+        width: 3rem;
+        height: 3rem;
+        color: #eae5e5;
+        border-radius: 50%;
+        position: relative;
+        svg {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 .introParagraph {

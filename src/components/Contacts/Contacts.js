@@ -10,9 +10,9 @@ const Contacts = () => {
                 <p><b>Cell </b>123-456-7890</p>
                 <p><b>Email </b>info@mysite.com</p>
                 <ul className="social-links">
-                    <li className=""><a href="#"><FontAwesomeIcon  icon={['fab', 'linkedin']} size="2x"/></a></li>
-                    <li className=""><a href="#"><FontAwesomeIcon  icon={['fab', 'xing-square']} size="2x"/></a></li>
-                    <li className=""><a href="#"><FontAwesomeIcon  icon={['fab', 'github-square']} size="2x"/></a></li>
+                    <li className=""><a href="https://www.linkedin.com/in/anna-presnyakova-204b535a/"><FontAwesomeIcon  icon={['fab', 'linkedin']} size="2x"/></a></li>
+                    <li className=""><a href="https://www.xing.com/profile/Anna_Presnyakova/"><FontAwesomeIcon  icon={['fab', 'xing-square']} size="2x"/></a></li>
+                    <li className=""><a href="https://github.com/chiffenok"><FontAwesomeIcon  icon={['fab', 'github-square']} size="2x"/></a></li>
                 </ul>
             </div>
             <div className="form">

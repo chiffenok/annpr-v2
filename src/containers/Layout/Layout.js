@@ -3,7 +3,7 @@ import Home from '../../components/Home/Home';
 import Skills from '../../components/Skills/Skills';
 import Projects from '../../components/Projects/Projects';
 import Contacts from '../../components/Contacts/Contacts';
-import ss from '../../common/itcss.scss';
+import itcss from '../../common/itcss.scss';
 import Header from '../../components/Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Route, Switch} from "react-router-dom";
@@ -37,9 +37,9 @@ const Layout = () => {
                             <span className="icon"><FontAwesomeIcon icon="share-alt" size="lg"/></span>
                             <h4>Follow Me</h4>
                             <ul className="social-links">
-                                <li className=""><a href="#"><FontAwesomeIcon  icon={['fab', 'linkedin-in']} size="lg"/></a></li>
-                                <li className=""><a href="#"><FontAwesomeIcon  icon={['fab', 'xing']} size="lg"/></a></li>
-                                <li className=""><a href="#"><FontAwesomeIcon  icon={['fab', 'github']} size="lg"/></a></li>
+                                <li className=""><a href="https://www.linkedin.com/in/anna-presnyakova-204b535a/"><FontAwesomeIcon  icon={['fab', 'linkedin-in']} size="lg"/></a></li>
+                                <li className=""><a href="https://www.xing.com/profile/Anna_Presnyakova/"><FontAwesomeIcon  icon={['fab', 'xing']} size="lg"/></a></li>
+                                <li className=""><a href="https://github.com/chiffenok"><FontAwesomeIcon  icon={['fab', 'github']} size="lg"/></a></li>
                             </ul>
                         </li>
                         <li className="footerItem">

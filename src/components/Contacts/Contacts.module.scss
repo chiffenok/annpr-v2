@@ -46,6 +46,10 @@
     grid-area: form;
     margin: 0 0 2rem;
 
+    p {
+        margin: 2rem 0 1.5rem;
+    }
+
     input, textarea {
         width: 100%;
     }
@@ -54,11 +58,10 @@
     }
 }
 
-
-
-
 @media (max-width: 640px) {
-    
+    .ContactsPage {
+        display: block;
+    }
 }
 
 @media (min-width: 980px) {

@@ -131,7 +131,7 @@ button {
     .header {
         grid-template-columns: 4fr 1fr;
     }
-    .footer ul {
+    .footer .footerItemsList {
         padding: 1.5rem 0;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "icon icon"
@@ -140,10 +140,10 @@ button {
 }
 
 @media (max-width: 540px) {
-    .footer ul {
+    .footer .footerItemsList {
         display: block;
     }
-    .footer li {
+    .footer .footerItem {
         height: 3.5rem;
     }
 }
