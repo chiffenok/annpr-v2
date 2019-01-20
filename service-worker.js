@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/annpr-v2/precache-manifest.c75b90d18da69d8f7edbada8f720764f.js"
+  "/annpr-v2/precache-manifest.24bfff64b9e8ae01375ff1b6dfcafd8b.js"
 );
 
 workbox.clientsClaim();
