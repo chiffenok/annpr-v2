@@ -2,7 +2,7 @@
   "name": "annpr-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chiffenok.github.io/annpr-v2/",
+  "homepage": "https://annpr.com",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
