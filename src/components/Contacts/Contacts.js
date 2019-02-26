@@ -16,7 +16,7 @@ const Contacts = () => {
                 </ul>
             </div>
             <div className="form">
-                <form action="">
+                <form action="https://formspree.io/apresnyakova88@gmail.com">
                     <p>Looking forward to answering your email</p>
                     <div>
                         <input type="name" placeholder="Name *" />
