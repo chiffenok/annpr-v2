@@ -7,19 +7,32 @@ import itcss from '../../common/itcss.scss';
 import Header from '../../components/Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Route, Switch} from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const Layout = () => {
     return (
         <div className="App">
-            <Header/>
-            <main className="main">
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/skills" component={Skills} />
-                    <Route path="/projects" component={Projects} />
-                    <Route path="/contacts" component={Contacts} />
-                </Switch>
-            </main>
+            <div className="content">
+                <Header/>
+                <main className="main">
+                    <Route render={({location}) => (
+                        <TransitionGroup>
+                            <CSSTransition
+                                key={location.key}
+                                timeout={450}
+                                classNames={"fade"}
+                            >
+                                <Switch location={location}>
+                                    <Route exact path="/" component={Home} />
+                                    <Route path="/skills" component={Skills} />
+                                    <Route path="/projects" component={Projects} />
+                                    <Route path="/contacts" component={Contacts} />
+                                </Switch>
+                            </CSSTransition>
+                        </TransitionGroup>
+                    )} />
+                </main>
+            </div>
             <footer className="footer">
                 <div>
                     <ul className="footerItemsList">

@@ -3,7 +3,7 @@ import styles from "./Projects.module.scss";
 
 const Projects = () => {
     return (
-        <div className="ProjectsPage">
+        <div className="page ProjectsPage">
             <hgroup>
                 <h4 className={styles.greetingsTitle}>Projects</h4>
             </hgroup>

@@ -5,7 +5,7 @@ import woman from "./../../common/img/woman.jpeg";
 
 const Home = () => {
     return (
-        <div className="HomePage">
+        <div className="page HomePage">
             <aside className="photo">
                 <img alt="Anna Presnyakova" src={woman} />
             </aside>

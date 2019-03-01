@@ -4,7 +4,7 @@ import styles from "./Contacts.module.scss";
 
 const Contacts = () => {
     return (
-        <div className="ContactsPage">
+        <div className="page ContactsPage">
             <h4 className={styles.greetingsTitle}>Contacts</h4>
             <div className="contacts">
                 <p><b>Cell </b>123-456-7890</p>

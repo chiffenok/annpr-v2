@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Skills = () => {
     return (
-        <div className="SkillsPage">
+        <div className="page SkillsPage">
             <hgroup>
                 <h4 className={styles.greetingsTitle}>Resume</h4>
             </hgroup>

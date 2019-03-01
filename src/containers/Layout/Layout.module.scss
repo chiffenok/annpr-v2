@@ -1,8 +1,19 @@
 html {
+    height: 100%;
     font-family: 'Noticia Text', serif;
     font-size:16px;
     color: rgb(70, 70, 70);
     background-color: #eae5e5;
+}
+
+body, #root {
+    height: 100%;
+}
+
+.App {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 p {
@@ -60,6 +71,9 @@ button {
 }
 
 .footer {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
     width: 100%;
     box-sizing: border-box;
     background-color: $main-color;
@@ -117,6 +131,35 @@ button {
             }
         }
     }
+}
+
+.page {
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+/* Styles for react router page transition
+simple - enter transition 300ms, exit 150ms */
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
 }
 
 @media (max-width: 979px) {
