@@ -20,16 +20,16 @@ const Contacts = () => {
                     <p>Looking forward to answering your email</p>
                     <input type="hidden" name="form-name" value="contact" />
                     <div>
-                        <input name="name" type="text" placeholder="Name *" />
+                        <input name="name" type="text" placeholder="Name *" required />
                     </div>
                     <div>
-                        <input name="email" type="email" placeholder="Email" />
+                        <input name="email" type="email" placeholder="Email" required />
                     </div>
                     <div>
                         <input name="subject" type="text" placeholder="Subject" />
                     </div>
                     <div>
-                        <textarea name="message" cols="30" rows="10">
+                        <textarea name="message" cols="30" rows="10" required >
                             Message
                         </textarea>
                     </div>
