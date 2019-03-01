@@ -16,23 +16,24 @@ const Contacts = () => {
                 </ul>
             </div>
             <div className="form">
-                <form action="https://formspree.io/apresnyakova88@gmail.com" method="POST">
+                <form name="contact" method="POST">
                     <p>Looking forward to answering your email</p>
+                    <input type="hidden" name="form-name" value="contact" />
                     <div>
-                        <input name="name" type="name" placeholder="Name *" />
+                        <input name="name" type="text" placeholder="Name *" />
                     </div>
                     <div>
                         <input name="email" type="email" placeholder="Email" />
                     </div>
                     <div>
-                        <input name="subject" type="subject" placeholder="Subject" />
+                        <input name="subject" type="text" placeholder="Subject" />
                     </div>
                     <div>
-                        <textarea name="message" name="" id="" cols="30" rows="10">
+                        <textarea name="message" cols="30" rows="10">
                             Message
                         </textarea>
                     </div>
-                    <div><button>Send</button></div>
+                    <div><button type="submit">Send</button></div>
                 </form>
             </div>
         </div>
