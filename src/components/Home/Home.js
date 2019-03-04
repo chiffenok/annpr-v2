@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import {Link} from "react-router-dom";
-import woman from "./../../common/img/woman.jpeg";
+import annpr from "./../../common/img/ann2.jpg";
 
 const Home = () => {
     return (
         <div className="page HomePage">
             <aside className="photo">
-                <img alt="Anna Presnyakova" src={woman} />
+                <img alt="Anna Presnyakova" src={annpr} />
             </aside>
             <hgroup>
                 <h4 className={styles.greetingsTitle}>Hello,</h4>

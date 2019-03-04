@@ -3,7 +3,7 @@ html {
     font-family: 'Noticia Text', serif;
     font-size:16px;
     color: rgb(70, 70, 70);
-    background-color: #eae5e5;
+    background-color: $bg-color;
 }
 
 body, #root {
@@ -34,7 +34,7 @@ input, textarea, button {
     font-weight: 300;
     font-size: .8125rem;
     line-height: 1.4rem;
-    background: $main-color;
+    background: $secondary-color;
     border: none;
     box-sizing: border-box;
     color: #fff;
@@ -54,7 +54,7 @@ button {
     cursor: pointer;
     font-weight: 400;
     padding: .35rem 1.8rem;
-    background: $secondary-color;
+    background: $main-color;
 }
 
 .header, .main, {
@@ -76,7 +76,7 @@ button {
     grid-template-rows: 1fr auto;
     width: 100%;
     box-sizing: border-box;
-    background-color: $main-color;
+    background-color: $secondary-color;
 
     div {
         width: 980px;
@@ -106,9 +106,9 @@ button {
         padding: .6rem;
         margin-right: .8rem;
         float: left;
-        color: $main-color;
+        color: $secondary-color;
         text-align: center;
-        background: $secondary-color;
+        background: $bg-color;
         border-radius: 50%;
         line-height: 1.4rem;
     }
