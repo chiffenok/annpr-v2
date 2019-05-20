@@ -18,14 +18,10 @@ const Home = () => {
                 <li><Link to="/projects">My Work</Link></li>
                 <li><Link to="/skills">My Skills</Link></li>
             </ul>
-            <p className="introParagraph">
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me and you can
-                start adding your own content and make changes to the font. Feel
-                free to drag and drop me anywhere you like on your page. I’m a
-                great place for you to write more. Tell a story and let your
-                users get to know you.
-            </p>
+            <div className="introParagraph">
+                <p>I am Software Engineer at Rewe Group, specializing in Frontend development. I want to make the web better by developing a high-quality and user-friendly application. I realize that the web highly dynamic ecosystem which constantly changing, web-developers should keep up with new trends and always continue to learn. And that’s what I like the most about my job. Working in e-commerce application with an agile team taught me to adapt to requirements’ changes and delivered changes often.</p>
+                <p>At my current job, JavaScript, ReactJs, Html, and CSS are my everyday working tools. My passion also data visualisation, I would like to work with JavaScript libraries such as ApexChartsJs. At the moment, I am based on Cologne, Germany. However, I open to new challenges and relocation.</p>
+            </div>
         </div>
     );
 };
